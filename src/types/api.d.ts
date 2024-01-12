@@ -7,5 +7,5 @@ type ApiMethods = GetMethod | PostMethod | PutMethod | DeleteMethod;
 
 type ApiPayload = Record<
   string,
-  boolean | number | string | I_API_PAYLOAD | Array<boolean | number | string>
+  boolean | number | string | ApiPayload | Array<boolean | number | string>
 >;
